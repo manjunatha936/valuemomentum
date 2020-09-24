@@ -1,0 +1,12 @@
+.vm-categ-container {
+  margin-bottom: 1.2rem;
+}
+
+.vm-categ-patch {
+  @extend .fnt-xs;
+  background: $tag-clr;
+  padding: 0.25rem 1.2rem;
+  display: inline-block;
+  border-radius: 18px;
+  margin-right: 0.5rem;
+}

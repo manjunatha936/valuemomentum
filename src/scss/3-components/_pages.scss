@@ -1,0 +1,78 @@
+// Truckin Pages
+.t-page {
+  // .index-page, .drivers-landing-page
+  &.index-page,
+  &.drivers-landing-page {
+    .nav-header.bg-blue-header {
+      border-bottom: 1px solid transparent;
+    }
+  }
+
+  // .about-us
+  &.about-us {
+    .main-about-us {
+      @media (max-width: 767px) {
+        padding: 90px 0 10px 0;
+      }
+
+      padding: 150px 0 50px 0;
+    }
+  }
+
+  // career
+  &.career {
+    .main-career {
+      @media (max-width: 767px) {
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+      }
+
+      padding: 130px 0;
+      padding-bottom: 6rem;
+    }
+  }
+
+  // contact-us
+  &.contact-us {
+    .main-contact-us {
+      @media (max-width: 767px) {
+        padding: 90px 0 0 0;
+      }
+
+      padding: 130px 0 10px 0;
+    }
+  }
+
+  // news-media
+  &.news-media {
+    .main-news-media {
+      @media (max-width: 767px) {
+        padding: 90px 0 0 0;
+      }
+
+      padding: 130px 0 10px 0;
+    }
+  }
+
+  // apply-job
+  &.apply-job {
+    .main-apply-job {
+      @media (max-width: 767px) {
+        padding: 90px 0 0 0;
+      }
+
+      padding: 130px 0 0px 0;
+    }
+  }
+
+  // news-media-detail
+  &.news-media-detail {
+    .main-news-media-detail {
+      @media (max-width: 767px) {
+        padding: 90px 0 0 0;
+      }
+
+      padding: 130px 0 10px 0;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.footer {
+  padding: 2.5rem 0;
+  &__des {
+    @extend .fnt-sm;
+    letter-spacing: 0.39px;
+  }
+}
+
+.footer-link {
+  @extend .fnt-sm;
+  margin-bottom: 0.6rem;
+  font-family: "muli-Bold";
+}
+
+// subscibe info
+.vm-subscribe-form {
+  .vm-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.vm-subscribe-input {
+  @extend .fnt-sm;
+  border: none;
+  padding: 0.8rem 1rem;
+}

@@ -1,0 +1,58 @@
+@mixin bp($size) {
+
+  // 320px
+  @if $size=="phone" {
+    @media (min-width: $xs) {
+      @content;
+    }
+  }
+
+  // 567px
+  @if $size=="phone-md" {
+    @media (min-width: $sm) {
+      @content;
+    }
+  }
+
+  // 667px
+  @if $size=="phone-lg" {
+    @media (min-width: $smd) {
+      @content;
+    }
+  }
+
+  // 767px
+  @if $size=="tab" {
+    @media (min-width: $tab) {
+      @content;
+    }
+  }
+
+  // 1024px
+  @if $size=="desktop-1024" {
+    @media (min-width: $desktop-1024) {
+      @content;
+    }
+  }
+
+  // 1200px
+  @if $size=="desktop-1200" {
+    @media (min-width: $xl) {
+      @content;
+    }
+  }
+
+  // 1440px
+  @if $size=="desktop-1366" {
+    @media (min-width: $desktop-1366) {
+      @content;
+    }
+  }
+
+  // 1900px
+  @if $size=="hd" {
+    @media (min-width: $hd) {
+      @content;
+    }
+  }
+}

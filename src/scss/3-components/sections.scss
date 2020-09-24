@@ -1,0 +1,19 @@
+.section {
+  padding: 20px 0;
+
+  @include bp("tab") {
+    padding: 40px 20px;
+  }
+
+  @include bp("desktop") {
+    padding: 60px 30px;
+  }
+
+  @include bp("desktop-1200") {
+    padding: 80px;
+  }
+
+  @include bp("desktop-1366") {
+    padding: 100px;
+  }
+}

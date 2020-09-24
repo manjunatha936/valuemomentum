@@ -1,0 +1,26 @@
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  color: $w;
+}
+
+// Fixed top
+.header-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  width: 100%;
+  background: 0 0;
+}

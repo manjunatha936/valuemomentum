@@ -1,0 +1,11 @@
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+  .nav-header.bg-blue-header {
+    background-color: $blue;
+  }
+
+  .lcl_icon.lcl_next {
+    position: absolute !important;
+    right   : 0 !important;
+  }
+}

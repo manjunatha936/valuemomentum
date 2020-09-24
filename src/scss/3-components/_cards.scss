@@ -1,0 +1,45 @@
+.vm-thumbnail {
+  margin: {
+    top: 1.2rem;
+    bottom: 2rem;
+  }
+
+  &__body {
+    background: #f9f9f9;
+    padding: 1.2rem;
+  }
+
+  &__heading {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "muli-Bold";
+  }
+  &__des {
+    @extend .fnt-sm;
+    color: $card-des;
+    letter-spacing: 0.23px;
+    margin-bottom: 0.8rem;
+  }
+}
+
+.vm-ar-publish-info {
+  span {
+    display: inline-block;
+    position: relative;
+    &:first-child {
+      padding-right: 0.8rem;
+      margin-right: 0.8rem;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -2px;
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        background: $card-des;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

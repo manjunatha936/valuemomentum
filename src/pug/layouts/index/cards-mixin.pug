@@ -1,0 +1,15 @@
+mixin whitepaperCards(src,alt ,categ1 ,categ2, publistStatus, publishDate)
+    a(href="javascript:void(0);").vm-thumbnail
+        .vm-thumbnail__view
+            img.img354x250(src=src alt= img_alt)
+        .vm-thumbnail__body
+            .vm-cate-list
+                .vm-cate-list__item= categ1
+                .vm-cate-list__item= categ2
+            
+            h5.vm-thumbnail__heading= card_heading
+            p.vm-thumbnail__des= card_des
+
+            .vm-ar-publish-info.fnt-xs
+                span= publistStatus
+                span= publishDate

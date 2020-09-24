@@ -1,0 +1,13 @@
+.vm-btn {
+  @extend .fnt-sm;
+  padding: 0.8rem 2rem;
+  border: none;
+  font-family: "muli-Bold";
+  letter-spacing: 2px;
+  border-radius: 4px;
+
+  &--primary {
+    background: $secondary;
+    color: $w;
+  }
+}

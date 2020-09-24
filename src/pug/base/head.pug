@@ -1,0 +1,71 @@
+mixin head(page_title)
+    head
+        meta(charset='utf-8')
+        title= page_title
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no')
+        meta(property='og:title', content='')
+        meta(property='og:type', content='')
+        meta(property='og:url', content='')
+        meta(property='og:image', content='')
+        link(rel='manifest', href='site.webmanifest')
+        link(rel='apple-touch-icon', href='./assets/icons/favicon.png')
+        link(rel="shortcut icon", href="./assets/icons/favicon.png", type="image/x-png")
+        // Place favicon.ico in the root directory
+        meta(name='theme-color', content='#fafafa')
+        link(href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap', rel='stylesheet')
+        //- link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css")
+        //- script(type='text/javascript', src='https://translate.google.com/translate_a/element.js?\cb=googleTranslateElementInit')
+
+        //Twitter Card
+        meta(name='twitter:card', content='summary')
+        meta(name='twitter:site', content='@site_account')
+        meta(name='twitter:creator', content='@individual_account')
+        meta(name='twitter:url', content='https://example.com/page.html')
+        meta(name='twitter:title', content='Content Title')
+        meta(name='twitter:description', content='Content description less than 200 characters')
+        meta(name='twitter:image', content='https://example.com/image.jpg')
+        meta(name='twitter:image:alt', content='A text description of the image conveying the essential nature of an image to users who are visually impaired. Maximum 420 characters.')
+        // disallow Twitter from using your site's info for personalization purposes
+        meta(name='twitter:dnt', content='on')
+
+        // Smart App Banner
+        meta(name='apple-itunes-app', content='app-id=APP_ID,affiliate-data=AFFILIATE_ID,app-argument=SOME_TEXT')
+        // Disable automatic detection and formatting of possible phone numbers
+        meta(name='format-detection', content='telephone=no')
+        // Launch Icon (180x180px or larger)
+        link(rel='apple-touch-icon', href='/path/to/apple-touch-icon.png')
+        // Launch Screen Image
+        link(rel='apple-touch-startup-image', href='/path/to/launch.png')
+        // Launch Icon Title
+        meta(name='apple-mobile-web-app-title', content='App Title')
+        // Enable standalone (full-screen) mode
+        meta(name='apple-mobile-web-app-capable', content='yes')
+        // Status bar appearance (has no effect unless standalone mode is enabled)
+        meta(name='apple-mobile-web-app-status-bar-style', content='black')
+        // iOS app deep linking
+        meta(name='apple-itunes-app', content='app-id=APP-ID, app-argument=http/url-sample.com')
+        link(rel='alternate', href='ios-app://APP-ID/http/url-sample.com')
+
+        // Force IE 8/9/10 to use its latest rendering engine
+        meta(http-equiv='x-ua-compatible', content='ie=edge')
+        // Disable automatic detection and formatting of possible phone numbers by Skype Toolbar browser extension
+        meta(name='skype_toolbar', content='skype_toolbar_parser_compatible')
+
+        //Apple favicons
+        link(rel="apple-touch-icon" href="./assets/icons/touch-icons/apple-touch-icon.png")
+        link(rel='apple-touch-icon', sizes='57x57', href='./assets/img/icons/touch-icons/apple-touch-icon.png')
+        link(rel='apple-touch-icon', sizes='60x60', href='./assets/img/icons/touch-icons/apple-touch-icon.png')
+        link(rel='apple-touch-icon', sizes='72x72', href='./assets/img/icons/touch-icons/apple-touch-icon.png')
+        link(rel='apple-touch-icon', sizes='76x76', href='./assets/img/icons/touch-icons/apple-touch-icon.png')
+        link(rel='apple-touch-icon', sizes='114x114', href='./assets/img/icons/touch-icons/apple-touch-icon.png')
+        link(rel='apple-touch-icon', sizes='120x120', href='./assets/img/icons/touch-icons/apple-touch-icon.png')
+        link(rel='apple-touch-icon', sizes='144x144', href='./assets/img/icons/touch-icons/apple-touch-icon.png')
+        link(rel='apple-touch-icon', sizes='152x152', href='./assets/img/icons/touch-icons/apple-touch-icon.png')
+        link(rel='apple-touch-icon', sizes='180x180', href='./assets/img/icons/touch-icons/apple-touch-icon.png')
+
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js") 
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js") 

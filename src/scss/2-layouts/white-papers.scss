@@ -1,0 +1,33 @@
+.vm-post-published {
+  @extend .fnt-sm;
+  letter-spacing: 0.93px;
+  margin-top: 1rem;
+}
+
+.vm-cate-list {
+  @extend .fnt-xs;
+  letter-spacing: 0.7px;
+  font-family: "muli-Bold";
+  display: flex;
+  margin-bottom: 0.6rem;
+
+  &__item {
+    position: relative;
+    color: $tag-clr;
+
+    &:first-child {
+      margin-right: 0.6rem;
+      padding-right: 0.6rem;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        height: calc(100% - 40%);
+        width: 1px;
+        background: $tag-clr;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

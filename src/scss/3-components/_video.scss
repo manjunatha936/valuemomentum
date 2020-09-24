@@ -1,0 +1,100 @@
+// Homepage video
+
+.t-video-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.loopVideo {
+  object-fit: cover;
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.t-video-block {
+  color: $b24;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.54px;
+  display: inline-flex;
+  align-items: center;
+  text-transform: initial;
+  text-decoration: underline;
+  transition: 0.4s ease all;
+
+  @media (min-width: 1024px) {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $orange;
+    text-decoration: underline !important;
+    transition: 0.4s ease all;
+
+    .t-triangle-right {
+      border-left: 10px solid $orange;
+      transition: 0.4s ease all;
+    }
+  }
+
+  &--w {
+    color: $w !important;
+  }
+}
+
+.t-triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-left: 10px solid $b24;
+  border-bottom: 6px solid transparent;
+  display: inline-block;
+
+  &--white {
+    border-left-color: $w;
+  }
+}
+
+.video-bottom-level {
+  position: relative;
+
+  &:after {
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.22),
+      rgba(0, 0, 0, 0.22)
+    );
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    transition: all 0.4s ease-in-out 0s;
+  }
+
+  .t-video-block {
+    color: $w;
+  }
+
+  &:hover,
+  &:focus {
+    color: $w;
+
+    .t-triangle-right {
+      border-left: 12px solid $w;
+    }
+  }
+
+  .t-triangle-right {
+    border-left: 12px solid $w;
+  }
+}
