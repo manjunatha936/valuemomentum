@@ -1,0 +1,74 @@
+section.section-padding4
+    .container
+        .row
+            .col-md-6.offset-md-3.col-xl-4.offset-xl-4.mx-auto
+                ul#myTab.nav.nav-tabs.nav-tabs--bd-n.pb-4(role='tablist')
+                    li.nav-item(role='presentation')
+                        a#all-tab.nav-link.active(data-toggle='tab' href='#all' role='tab' aria-controls='all' aria-selected='true') All
+                    li.nav-item(role='presentation')
+                        a#cloud-tab.nav-link(data-toggle='tab' href='#cloud' role='tab' aria-controls='cloud' aria-selected='false') Cloud
+                    
+                    li.nav-item(role='presentation')
+                        a#api-tab.nav-link(data-toggle='tab' href='#api' role='tab' aria-controls='api' aria-selected='false') API
+                    
+                    li.nav-item(role='presentation')
+                        a#technology-tab.nav-link(data-toggle='tab' href='#technology' role='tab' aria-controls='technology' aria-selected='false') Technology
+                    
+        .row
+            #myTabContent.tab-content.tab-content--fluid
+                #all.vm-show-cnt.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='all-tab')
+                    .col-md-6.col-lg-4.mb-4.content
+                        include cards-mixin.pug
+                        +whitepaperCards("./assets/img/white-papers-listing/listing2.png", "Thumbnail image", "Whitepaper", "API Integration", "Commercial Online Banking:", "ValueMomentum’s IT services for Life and Annuities carriers are tailored to rapidly roll out products;", "Released", "02 November 2018")
+                    
+                    .col-md-6.col-lg-4.mb-4.content
+                        +whitepaperCards("./assets/img/white-papers-listing/listing1.png", "Thumbnail image", "Whitepaper", "Cloud", "Commercial Online Banking:", "ValueMomentum’s IT services for Life and Annuities carriers are tailored to rapidly roll out products;", "Released", "02 November 2018")
+                    
+                    .col-md-6.col-lg-4.mb-4.content
+                        +whitepaperCards("./assets/img/white-papers-listing/listing4.png", "Thumbnail image", "Whitepaper", "Technology", "Commercial Online Banking:", "ValueMomentum’s IT services for Life and Annuities carriers are tailored to rapidly roll out products;", "Released", "02 November 2018")
+                    
+                    .col-md-6.col-lg-4.mb-4.content
+                        +whitepaperCards("./assets/img/white-papers-listing/listing3.png", "Thumbnail image", "Whitepaper", "Banking", "Commercial Online Banking:", "ValueMomentum’s IT services for Life and Annuities carriers are tailored to rapidly roll out products;", "Released", "02 November 2018")
+                    
+                    .col-md-6.col-lg-4.mb-4.content
+                        +whitepaperCards("./assets/img/white-papers-listing/listing2.png", "Thumbnail image", "Whitepaper", "Banking", "Commercial Online Banking:", "ValueMomentum’s IT services for Life and Annuities carriers are tailored to rapidly roll out products;", "Released", "02 November 2018")
+                    
+                    .col-md-6.col-lg-4.mb-4.content
+                        +whitepaperCards("./assets/img/white-papers-listing/listing1.png", "Thumbnail image", "Whitepaper", "Banking", "Commercial Online Banking:", "ValueMomentum’s IT services for Life and Annuities carriers are tailored to rapidly roll out products;", "Released", "02 November 2018")
+                    
+                    .col-md-6.col-lg-4.mb-3.mb-md-4.content
+                        +whitepaperCards("./assets/img/white-papers-listing/listing3.png", "Thumbnail image", "Whitepaper", "Banking", "Commercial Online Banking:", "ValueMomentum’s IT services for Life and Annuities carriers are tailored to rapidly roll out products;", "Released", "02 November 2018")
+                    
+                    .col-md-6.col-lg-4.mb-4.content
+                        +whitepaperCards("./assets/img/white-papers-listing/listing2.png", "Thumbnail image", "Whitepaper", "Banking", "Commercial Online Banking:", "ValueMomentum’s IT services for Life and Annuities carriers are tailored to rapidly roll out products;", "Released", "02 November 2018")
+                    
+                    .col-md-6.col-lg-4.mb-4.content
+                        +whitepaperCards("./assets/img/white-papers-listing/listing4.png", "Thumbnail image", "Whitepaper", "Banking", "Commercial Online Banking:", "ValueMomentum’s IT services for Life and Annuities carriers are tailored to rapidly roll out products;", "Released", "02 November 2018")
+                
+                #cloud.tab-pane.fade(role='tabpanel' aria-labelledby='cloud-tab')
+                    
+                    .col-md-6.col-lg-4.mb-3.mb-md-4
+                        include cards-mixin.pug
+                        +whitepaperCards("./assets/img/white-papers-listing/listing2.png", "Thumbnail image", "Whitepaper", "API Integration", "Commercial Online Banking:", "ValueMomentum’s IT services for Life and Annuities carriers are tailored to rapidly roll out products;", "Released", "02 November 2018")
+                    
+                    .col-md-6.col-lg-4.mb-3.mb-md-4
+                        +whitepaperCards("./assets/img/white-papers-listing/listing3.png", "Thumbnail image", "Whitepaper", "Cloud", "Commercial Online Banking:", "ValueMomentum’s IT services for Life and Annuities carriers are tailored to rapidly roll out products;", "Released", "02 November 2018")
+                    
+                    .col-md-6.col-lg-4.mb-3.mb-md-4
+                        +whitepaperCards("./assets/img/white-papers-listing/listing4.png", "Thumbnail image", "Whitepaper", "Cloud", "Commercial Online Banking:", "ValueMomentum’s IT services for Life and Annuities carriers are tailored to rapidly roll out products;", "Released", "02 November 2018")
+                    
+                
+                #api.tab-pane.fade(role='tabpanel' aria-labelledby='api-tab')
+                    .col-md-6.col-lg-4.mb-3.mb-md-4
+                        +whitepaperCards("./assets/img/white-papers-listing/listing1.png", "Thumbnail image", "Whitepaper", "Cloud", "Commercial Online Banking:", "ValueMomentum’s IT services for Life and Annuities carriers are tailored to rapidly roll out products;", "Released", "02 November 2018")
+                    
+                    .col-md-6.col-lg-4.mb-3.mb-md-4
+                        +whitepaperCards("./assets/img/white-papers-listing/listing1.png", "Thumbnail image", "Whitepaper", "Cloud", "Commercial Online Banking:", "ValueMomentum’s IT services for Life and Annuities carriers are tailored to rapidly roll out products;", "Released", "02 November 2018")
+                
+                
+                #technology.tab-pane.fade(role='tabpanel' aria-labelledby='technology-tab')
+                    .col-md-6.col-lg-4.mb-3.mb-md-4
+                        +whitepaperCards("./assets/img/white-papers-listing/listing1.png", "Thumbnail image", "Whitepaper", "Cloud", "Commercial Online Banking:", "ValueMomentum’s IT services for Life and Annuities carriers are tailored to rapidly roll out products;", "Released", "02 November 2018")
+        
+            .col-md-12.text-center.mt-3.mt-md-4
+                button.vm-btn.vm-btn--sm#loadMore Load more

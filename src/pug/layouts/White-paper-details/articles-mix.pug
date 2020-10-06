@@ -1,0 +1,7 @@
+mixin mediaArticle(src, alt, heading, date)
+    a(href="javascript:void(0);").vm-media
+        .vm-media__left
+            img(src=src alt=alt)
+        .vm-media__right
+            h6.fnt-md=heading
+            span.fnt-xs.vm-media__date=date

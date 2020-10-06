@@ -1,7 +1,7 @@
-mixin whitepaperCards(src,alt ,categ1 ,categ2, publistStatus, publishDate)
-    a(href="javascript:void(0);").vm-thumbnail
+mixin whitepaperCards(src, alt, categ1, categ2, card_heading, card_des, publistStatus, publishDate)
+    a(href="whitepaper-details.html").vm-thumbnail
         .vm-thumbnail__view
-            img.img354x250(src=src alt= img_alt)
+            img.img354x250.img-fit(src=src alt= img_alt)
         .vm-thumbnail__body
             .vm-cate-list
                 .vm-cate-list__item= categ1

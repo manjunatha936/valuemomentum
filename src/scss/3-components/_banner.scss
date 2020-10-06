@@ -1,9 +1,17 @@
 .vm-hero-banner {
   background: url("/assets/img/banner.png") no-repeat;
   background-size: cover;
-  height: 650px;
+  height: 450px;
   display: flex;
   align-items: flex-end;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   color: #fff;
+
+  @media (min-width: $md) {
+    padding-bottom: 4rem;
+    height: 500px;
+  }
+  @media (min-width: $lg) {
+    height: 650px;
+  }
 }

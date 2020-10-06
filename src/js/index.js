@@ -5,22 +5,18 @@ import $ from "jquery";
 // import jQuery from "jquery";
 
 // import "./smoth-scroll.js";
-import { TimelineMax, TweenMax, TweenLite } from "gsap/all";
+// import { TimelineMax, TweenMax, TweenLite } from "gsap/all";
 // import ScrollMagic from "scrollmagic";
 
 import "../scss/main.scss";
 
-import "bootstrap/js/dist/modal";
+// import "bootstrap/js/dist/modal";
 import "bootstrap/js/dist/dropdown";
 import "bootstrap/js/dist/tab";
 import "bootstrap/js/dist/collapse";
-import "bootstrap/js/dist/modal";
-// import "./lightbox.lite.js";
-// import "./gallery.js";
+// import "bootstrap/js/dist/modal";
 
-import "semantic-ui-css";
-
-import Header from "./components/header";
+// import "semantic-ui-css";
 
 /** footer-animations **/
 
@@ -31,23 +27,51 @@ const footeranimate = new FooterAnim();
 if (process.env.NODE_ENV === "development") {
   // require("../pug/home.pug");
   require("../pug/index.pug");
+  require("../pug/whitepaper-details.pug");
+  require("../pug/case-studies-details.pug");
+  require("../pug/case-studies.pug");
 }
 
 // Eslint-disable-line no-console
 console.log("Hi, my name is Common!");
 
-//Translate
+import ResourceSlider from "./components/more-resoureces-slider.js";
+const resourceSlider = new ResourceSlider();
 
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    { pageLanguage: "en" },
-    "google_translate_element"
-  );
-}
+// white-papers details
+import ModalPopup from "./white-paper-details.js";
+const modalPopup = new ModalPopup();
 
-//For Live Projects
-window.addEventListener("load", function () {
-  document.querySelector("body").classList.add("loaded");
-});
+// Case-stusy details
+import CasestudyDetails from "./casestudy-details.js";
+const casestudyDetails = new CasestudyDetails();
 
-const headerElem = new Header(".nav-header", ".nav-menu");
+// Load More Cards when you click load more button
+
+// var parent = document.querySelector(".vm-show-cnt"),
+//   items = parent.querySelectorAll(".content"),
+//   loadMoreBtn = document.querySelector("#loadMore"),
+//   maxItems = 6,
+//   hiddenClass = "visually-hidden";
+
+// [].forEach.call(items, function (item, idx) {
+//   if (idx > maxItems - 1) {
+//     item.classList.add(hiddenClass);
+//   }
+// });
+
+// loadMoreBtn.addEventListener("click", function () {
+//   [].forEach.call(document.querySelectorAll("." + hiddenClass), function (
+//     item,
+//     idx
+//   ) {
+//     console.log(item);
+//     if (idx < maxItems - 1) {
+//       item.classList.remove(hiddenClass);
+//     }
+
+//     if (document.querySelectorAll("." + hiddenClass).length === 0) {
+//       loadMoreBtn.style.display = "none";
+//     }
+//   });
+// });

@@ -1,13 +1,66 @@
 .vm-btn {
   @extend .fnt-sm;
   padding: 0.8rem 2rem;
-  border: none;
   font-family: "muli-Bold";
-  letter-spacing: 2px;
   border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
 
   &--primary {
+    border: none;
+    letter-spacing: 2px;
     background: $secondary;
     color: $w;
   }
+
+  &--sm {
+    border: 1px solid $secondary;
+    color: $secondary;
+    display: inline-block;
+    transition: all ease 0.2s;
+    &:hover,
+    &:focus {
+      color: $w;
+      background: $secondary;
+      transition: all ease 0.2s;
+    }
+  }
+
+  &--filed {
+    background: $secondary !important;
+    color: $white;
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+  }
+}
+
+// Anchor links
+
+.vm-hero-link {
+  @extend .fnt-xs;
+  font-family: "muli-SemiBold";
+  color: $w;
+  display: inline-block;
+  &:hover,
+  &:focus {
+    color: $w;
+  }
+
+  &--secondary {
+    color: $danger;
+    &:hover,
+    &:focus {
+      color: $danger;
+    }
+  }
+}
+
+.vm-circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: $w;
+  display: inline-block;
 }

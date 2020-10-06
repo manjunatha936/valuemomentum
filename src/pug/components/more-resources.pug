@@ -1,0 +1,17 @@
+section.section-padding6.pt-0
+    .container
+        .row
+            .col
+                h4.hero-heading.mb-4.pb-md-2  More Resources
+        .row
+            .swiper-container.js-resourceSlider
+                // Additional required wrapper
+                .swiper-wrapper
+                    // Slides
+                    .col-md-4.swiper-slide
+                        include cards-mixin.pug
+                        +resourceCards("./assets/img/resources/resource1.png", "resourcecard", "Blog", "Enterprise cloud security framework: A practical guide to protecting")
+                    .col-md-4.swiper-slide
+                        +resourceCards("./assets/img/resources/resource2.png", "resourcecard", "Webinar", "Enterprise cloud security framework: A practical guide to protecting")
+                    .col-md-4.swiper-slide
+                        +resourceCards("./assets/img/resources/resource3.png", "resourcecard", "Customer Service", "Enterprise cloud security framework: A practical guide to protecting")

@@ -1,24 +1,85 @@
 .vm-thumbnail {
-  margin: {
-    top: 1.2rem;
-    bottom: 2rem;
+  position: relative;
+
+  // Cards reverse
+  &--revrse {
+    .vm-hero-link {
+      color: $b;
+      margin-top: 1rem;
+    }
+    .vm-thumbnail__body {
+      display: flex;
+      flex-direction: column;
+    }
+    .vm-thumbnail__heading {
+      flex: 1 1 auto;
+    }
+  }
+  @media (min-width: $md) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: {
+      top: 1.2rem;
+    }
   }
 
   &__body {
     background: #f9f9f9;
     padding: 1.2rem;
+    @media (min-width: $md) {
+      height: 100%;
+    }
   }
 
   &__heading {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 28px;
     font-family: "muli-Bold";
+
+    @media (min-width: $lg) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
   &__des {
     @extend .fnt-sm;
     color: $card-des;
     letter-spacing: 0.23px;
     margin-bottom: 0.8rem;
+  }
+  transition: all ease 0.6s;
+  &:hover,
+  &:focus {
+    box-shadow: -4px 10px 15px #e9e9e9;
+    transition: all ease 0.6s;
+    .vm-thumbnail__body {
+      transition: all ease 0.6s;
+      background: $w;
+    }
+    .vm-hover-cnt {
+      transform: translateY(0%);
+    }
+  }
+
+  // Thumbnail hover effect
+
+  &--lg {
+    cursor: pointer;
+    transition: all ease 0.6s;
+
+    &:hover {
+      transition: all ease 0.6s;
+      transform: translateY(-3%);
+      .vm-hover-details {
+        opacity: 1;
+        transition: all ease 0.6s;
+      }
+      // .vm-hover-cnt {
+      //   transition: all ease 0.6s;
+      //   transform: translateY(0%);
+      // }
+    }
   }
 }
 
@@ -43,3 +104,59 @@
     }
   }
 }
+
+// Image cards
+
+.vm-cardimg-body {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  color: $w;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 1.2rem 1.5rem;
+
+  &--space {
+    padding : {
+      left: 1.8rem;
+      right: 1.8rem;
+      bottom: 2rem;
+    }
+  }
+
+  .vm-hero-link {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.vm-hover-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: $text-secondary;
+  box-shadow: -4px 10px 34px rgba(255, 104, 92, 0.37);
+  opacity: 0;
+  transition: all ease 0.6s;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 1.8rem 2rem 1.8rem;
+  color: $w;
+
+  .vm-categ-patch {
+    background: $w;
+    color: $text-secondary;
+  }
+}
+
+// .vm-hover-cnt {
+//   transform: translateY(12%);
+//   transition: all ease 0.6s;
+// }

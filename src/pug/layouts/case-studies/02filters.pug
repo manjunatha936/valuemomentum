@@ -1,0 +1,16 @@
+section.section-padding4.pt-md-4
+    .container
+        .row
+            .col-12
+                .vm-filter
+                    .vm-filter__header
+                        h2.vm-filter__heading.fnt-bold
+                            span.mr-2 Filter
+                            img(src="./assets/img/case-studies/filter-menu.svg" alt="Menu Icon")
+                    .vm-filter__body
+        
+        .row.pt-md-5.vm-show-cnt
+            include 03filter-cards.pug
+
+            .col-md-12.text-center.mt-3.mt-md-4
+                button.vm-btn.vm-btn--sm#loadMore Load more

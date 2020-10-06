@@ -4,6 +4,17 @@
     @extend .fnt-sm;
     letter-spacing: 0.39px;
   }
+  &-navlist {
+    @media (max-width: $tab) {
+      margin: 1rem 0;
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        width: 33.33%;
+      }
+    }
+  }
 }
 
 .footer-link {

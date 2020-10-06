@@ -1,0 +1,13 @@
+mixin resourceCards(src12, img_alt12, tag, heading)
+    .vm-thumbnail.mb-md-0.pt-0
+        a(href="javascript:void(0);").vm-thumbnail__view
+            img.img354x453.img-fit(src=src12 alt= img_alt12)
+        .vm-overlay
+        .vm-cardimg-body
+            a.text-white(href="javascript:void(0);")
+                span.vm-categ-patch.mb-2= tag
+                h5.vm-thumbnail__heading.mb-3= heading
+            a.vm-hero-link(href="javascript:void(0);")
+                | Read More
+                span.vm-circle.flex-center.ml-3
+                    img(src="./assets/img/white-papers-listing/arrow.svg" alt="Arrow")

@@ -1,0 +1,218 @@
+.vm-banner-mb {
+  @media (max-width: $tab) {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 5rem;
+
+    .vm-bg-gray {
+      background: transparent !important;
+    }
+  }
+}
+
+.vm-banner {
+  img {
+    @media (max-width: $tab) {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+  }
+}
+
+.vm-article-published {
+  color: $b7;
+  letter-spacing: 0.93px;
+  display: block;
+}
+
+.vm-article-des {
+  @extend .hero-heading;
+  font-family: "muli" !important;
+  letter-spacing: 0.41px;
+  margin-bottom: 0.7rem;
+}
+
+.mt10 {
+  @media (min-width: $md) {
+    margin-top: -6rem;
+  }
+
+  @media (min-width: $lg) {
+    margin-top: -8rem;
+  }
+
+  @media (min-width: $xl) {
+    margin-top: -10rem;
+  }
+}
+
+// article content
+
+.vm-article {
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+
+  @media (min-width: $md) {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+
+  @media (min-width: $lg) {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+  }
+
+  &__content {
+
+    p,
+    ul li {
+      @extend .fnt-md;
+      color: $b;
+      letter-spacing: 0.5px;
+      margin-bottom: 1rem;
+
+      @media (min-width: $md) {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    span {
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 0.63px;
+      color: $b;
+      font-family: "muli-SemiBold";
+      margin-bottom: 2rem;
+      display: inline-block;
+
+      @media (min-width: $md) {
+        font-size: 18px;
+        line-height: 28px;
+      }
+
+      @media (min-width: $lg) {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      margin-bottom: 1.5rem;
+      margin-top: 0.4rem;
+    }
+
+    a {
+      text-decoration: underline;
+      color: #0176ff;
+      display: inline;
+    }
+
+    h3 {
+      text-align: center;
+      color: #74c0e3;
+      margin-bottom: 2rem;
+      padding-top: 1rem;
+    }
+
+    h6 {
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 0.5px;
+      font-family: "muli-SemiBold";
+      margin-bottom: 1.2rem;
+      padding-top: 1rem;
+    }
+
+    h1,
+    h2,
+    h4,
+    h5 {
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0.63px;
+      margin-bottom: 1.2rem;
+      padding-top: 0.8rem;
+      font-family: "muli-SemiBold";
+
+      @media (min-width: $md) {
+        margin-bottom: 1.2rem;
+        font-size: 18px;
+        line-height: 28px;
+      }
+
+      @media (min-width: $lg) {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+
+    ul {
+      @media (max-width: $tab) {
+        margin-top: 1.5rem;
+      }
+
+      @media (min-width: $lg) {
+        max-width: 320px;
+        margin-left: 1.5rem;
+      }
+
+      li {
+        position: relative;
+        padding-left: 1rem;
+
+        &::before {
+          content: "";
+          top: 0.6rem;
+          left: 0;
+          position: absolute;
+          border-top: 4px solid transparent;
+          border-left: 7px solid $danger;
+          border-bottom: 4px solid transparent;
+        }
+      }
+    }
+  }
+}
+
+.media-list {
+  margin: 2rem 0;
+
+  @media (min-width: $lg) {
+    margin: 2.2rem 0;
+    display: flex;
+  }
+
+  img {
+    margin: 0;
+  }
+}
+
+
+// Read more
+
+.hero-section {
+  background: #edf2f4;
+  padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+
+  @media (min-width: $md) {
+    padding: 1.8rem 1rem 1.8rem 1rem;
+  }
+
+  &__view {
+    @media (max-width: $tab) {
+      img {
+        max-width: 100%;
+      }
+    }
+
+    @media (min-width: $md) {
+      margin-top: -2rem;
+    }
+
+    @media (min-width: $lg) {
+      margin-top: -7rem;
+    }
+  }
+}
