@@ -1,12 +1,10 @@
 // Eslint-disable
 import "core-js/stable";
 import "regenerator-runtime/runtime";
-import $ from "jquery";
+// import $ from "jquery";
 // import jQuery from "jquery";
 
 // import "./smoth-scroll.js";
-// import { TimelineMax, TweenMax, TweenLite } from "gsap/all";
-// import ScrollMagic from "scrollmagic";
 
 import "../scss/main.scss";
 
@@ -30,12 +28,13 @@ if (process.env.NODE_ENV === "development") {
   require("../pug/whitepaper-details.pug");
   require("../pug/case-studies-details.pug");
   require("../pug/case-studies.pug");
+  require("../pug/webinar.pug");
 }
 
 // Eslint-disable-line no-console
 console.log("Hi, my name is Common!");
 
-import Filters from './filter-init';
+import Filters from "./filter-init";
 const filters = new Filters();
 
 import ResourceSlider from "./components/more-resoureces-slider.js";

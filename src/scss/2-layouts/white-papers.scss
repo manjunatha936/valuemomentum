@@ -15,18 +15,26 @@
     position: relative;
     color: $tag-clr;
 
+    margin-left: 0.6rem;
+    padding-left: 0.6rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      height: calc(100% - 40%);
+      width: 1px;
+      background: $tag-clr;
+      transform: translateY(-50%);
+    }
+
     &:first-child {
-      margin-right: 0.6rem;
-      padding-right: 0.6rem;
+      margin-left: 0rem;
+      padding-left: 0rem;
+
       &::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        right: 0;
-        height: calc(100% - 40%);
-        width: 1px;
-        background: $tag-clr;
-        transform: translateY(-50%);
+        display: none;
       }
     }
   }

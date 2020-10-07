@@ -46,3 +46,19 @@ ol {
 .overflow-hidden {
   overflow: hidden;
 }
+
+.icon-arrow-angle-right,
+.icon-right-arrow-angle {
+  position: relative;
+  top: 1px;
+  font-size: 10px;
+  display: inline-flex;
+  color: $b;
+  margin-left: 0.8rem;
+  &--wht {
+    color: $w !important;
+  }
+  &--suc {
+    color: $secondary !important;
+  }
+}

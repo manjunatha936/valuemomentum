@@ -1,0 +1,19 @@
+doctype html
+html(lang="en" dir="ltr")
+  include ./base/head.pug
+  +head('Valuemomentum - Whitepapers Details')
+
+  //- //Orientation
+  //- include ./components/orientation-modal.pug
+  
+  body
+    include ./components/header.pug
+    //- +header("bg-blue-header")
+    
+    main.js-resourceslider
+      include ./layouts/White-papers/main.pug
+
+      // More resources  
+      include ./components/more-resources.pug
+
+    include ./components/footer.pug

@@ -1,12 +1,14 @@
 mixin filterCards(tags, tags2, heading, src12, img_alt12)
     .vm-thumbnail.vm-thumbnail--revrse.mb-md-4.pt-0
         .vm-thumbnail__body
-            .vm-cate-list
-                span.vm-cate-list__item.mb-2= tags
-                span.vm-cate-list__item.mb-2= tags2
-            h5.vm-thumbnail__heading.mb-3= heading
-            a.vm-hero-link(href="javascript:void(0);")
+            a.vm-flex-btm(href="javascript:void(0);")
+                .vm-cate-list
+                    span.vm-cate-list__item.mb-2= tags
+                    span.vm-cate-list__item.mb-2= tags2
+                h5.vm-thumbnail__heading.mb-3= heading
+            a.vm-hero-link.fnt-sm(href="javascript:void(0);")
                 | View Case Study
+                i.icon-right-arrow-angle
         
         a(href="javascript:void(0);").vm-thumbnail__view
             img.img354x250.img-fit(src=src12 alt= img_alt12)

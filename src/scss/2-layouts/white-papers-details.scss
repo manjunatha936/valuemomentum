@@ -176,6 +176,42 @@
   }
 }
 
+.vm-txt-warpper {
+  &__cnt {
+    border-top: 1px solid #d1d1d8;
+    border-bottom: 1px solid #d1d1d8;
+    padding: 1rem 0;
+
+    @media (max-width: $tab) {
+      margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: $md) {
+      padding: 1.2rem 0;
+    }
+
+    p {
+      margin-bottom: 1rem !important;
+    }
+
+    @media (min-width: $md) {
+      float: right;
+      width: 210px;
+      margin-left: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.vm-auth-nm {
+  font-size: 13px !important;
+  line-height: 23px !important;
+  color: $danger !important;
+  margin-bottom: 0 !important;
+  font-family: "muli" !important;
+}
+
+
 .media-list {
   margin: 2rem 0;
 
