@@ -35,6 +35,9 @@ if (process.env.NODE_ENV === "development") {
 // Eslint-disable-line no-console
 console.log("Hi, my name is Common!");
 
+import Filters from './filter-init';
+const filters = new Filters();
+
 import ResourceSlider from "./components/more-resoureces-slider.js";
 const resourceSlider = new ResourceSlider();
 

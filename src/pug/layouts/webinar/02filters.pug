@@ -1,0 +1,32 @@
+section.section-padding4.pt-md-4
+    .container
+        .row
+            .col-12
+                .vm-filter
+                    .vm-filter__header
+                        h2.vm-filter__heading.fnt-bold
+                            span.mr-2 Filter
+                            img(src="./assets/img/case-studies/filter-menu.svg" alt="Menu Icon")
+                            span.dot-red
+                    .filterizr-control
+                        ul.vm-filter__body.pt-3.filterizr-filter.multifilter
+                            li.filter-tabs.active(data-multifilter="all") ALL
+                            li.filter-tabs(data-multifilter="1") Cloud
+                            li.filter-tabs(data-multifilter="2") Banking
+                            li.filter-tabs(data-multifilter="3") Whitepaper
+                            li.filter-tabs(data-multifilter="4") API Integration
+                            li.filter-tabs(data-multifilter="2") Banking
+                            li.filter-tabs(data-multifilter="3") Whitepaper
+                            li.filter-tabs(data-multifilter="4") API Integration
+                            .filter-tabs
+                                a(href="").extra-content-link
+                                    img(src="./assets/img/white-papers-listing/arrow.svg", alt="")
+
+        
+        .row.pt-md-5.vm-show-cnt
+            .row.extra-content-wrp
+                include 03filter-cards.pug
+            .filtr-container
+                include 03filter-cards.pug
+
+        
