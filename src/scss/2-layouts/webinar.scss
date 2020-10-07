@@ -1,0 +1,67 @@
+.vm-publish-date {
+    @extend .fnt-md;
+    letter-spacing: 0.93px;
+    display: block;
+}
+
+.vm-fut-cards {
+    background: #f9f9f9;
+    position: relative;
+    border-left: 5px solid $text-secondary;
+    padding: 1.2rem;
+
+    &:hover {
+        background: $w;
+    }
+
+    &__date {
+        @extend .fnt-sm;
+        color: #6d7278;
+        display: inline-block;
+        margin-bottom: .3rem;
+    }
+
+    .vm-hero-link {
+        color: $b !important;
+    }
+}
+
+.vm-profil-wraper {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    bottom: .6rem;
+    text-align: right;
+    padding-right: 1.2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.vm-profile {
+    position: relative;
+    background: #fff;
+    padding: 2px;
+    border-radius: 50%;
+    margin-right: -.5rem;
+
+    &:first-child {
+        background: transparent;
+
+        img {
+            z-index: 1;
+            border: none;
+        }
+    }
+
+    &:last-child {
+        right: 0px;
+        margin-right: 0rem;
+    }
+
+    img {
+        height: 40px;
+        width: 40px;
+        z-index: 2;
+        border-radius: 50%;
+    }
+}

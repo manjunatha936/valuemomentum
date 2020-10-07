@@ -10,8 +10,6 @@ class CasestudyDetails {
   }
 
   init() {
-    //
-
     // Readmore and less
     $(document).ready(function () {
       if (window.innerWidth > 768) {
@@ -33,6 +31,8 @@ class CasestudyDetails {
         });
       }
     });
+
+    // Hide and View snap chart
   }
 }
 

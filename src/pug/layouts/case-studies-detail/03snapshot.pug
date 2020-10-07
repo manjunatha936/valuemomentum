@@ -1,5 +1,5 @@
 .vm-side-sticky(class="vm-popup-modal vm-popup-modal--btm shadow" data-popup-modal="popup-btm")
-    span.vm-popup-modal__close X
+    span.vm-popup-modal__close.vm-view X
     .vm-side-sticky__content
         h6.vm-side-sticky__heading.d-none.d-md-block Snapshot
         .vm-hidden-data
@@ -26,27 +26,31 @@
             
             a(class="show-more-button")  Show More
     
-    .d-none.d-md-block.mt-md-4
+    .d-none.d-md-block.mt-md-4.pt-2
         h6.vm-side-sticky__heading Share case study
         ul.vm-social-list
             li.vm-social-list__item
                 a.vm-social-link(href="javascript:void(0);")
                     i.icon-facebook
+                    span.vm-social-link__txt.fnt-xs Facebook
             li.vm-social-list__item
                 a.vm-social-link(href="javascript:void(0);")
                     i.icon-twitter
+                    span.vm-social-link__txt.fnt-xs Twitter
             li.vm-social-list__item
                 a.vm-social-link(href="javascript:void(0);")
-                    i.icon-facebook
+                    .icon-linkedin
+                    span.vm-social-link__txt.fnt-xs Linkedin
             li.vm-social-list__item
                 a.vm-social-link(href="javascript:void(0);")
-                    i.icon-facebook
+                    i.icon-link
+                    span.vm-social-link__txt.fnt-xs Twitter
 
 
 // Sticky mobile content
 .vm-sticky-btm.mt-0
-    .vm-sticky-btm__content.mt-0(class="vm-popup-trigger"  data-popup-trigger="popup-btm")
-        a.vm-sticky-link(href="javascript:void(0);") View Snapshot
+    .vm-sticky-btm__content.mt-0.vm-hide(class="vm-popup-trigger"  data-popup-trigger="popup-btm")
+        a.vm-sticky-link.vm-txt-dsplay(href="javascript:void(0);") View Snapshot
             
 
 

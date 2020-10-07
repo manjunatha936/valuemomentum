@@ -30,6 +30,7 @@ if (process.env.NODE_ENV === "development") {
   require("../pug/whitepaper-details.pug");
   require("../pug/case-studies-details.pug");
   require("../pug/case-studies.pug");
+  require("../pug/webinar.pug");
 }
 
 // Eslint-disable-line no-console

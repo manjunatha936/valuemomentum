@@ -142,4 +142,13 @@
     line-height: 24px;
     color: $w;
     text-transform: uppercase;
+    display: none;
+
+    &:focus {
+        color: $w;
+    }
+
+    @media (max-width: $tab) {
+        display: block;
+    }
 }

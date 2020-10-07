@@ -14,6 +14,7 @@
 
 .section-padding4 {
   padding: 3rem 0;
+
   @media (min-width: $md) {
     padding: 4rem 0;
   }
@@ -21,6 +22,7 @@
 
 .section-padding6 {
   padding: 4rem 0;
+
   @media (min-width: $md) {
     padding: 6rem 0;
   }
@@ -31,6 +33,7 @@
     top: 1.5rem;
     bottom: 1.5rem;
   }
+
   @media (min-width: $md) {
     padding: 1.8rem;
   }
@@ -41,5 +44,9 @@
 }
 
 .mb3 {
-  margin-bottom: 3.5rem;
+  margin-bottom: 2rem;
+
+  @media (min-width: $md) {
+    margin-bottom: 3.5rem;
+  }
 }

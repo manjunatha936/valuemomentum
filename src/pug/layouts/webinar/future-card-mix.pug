@@ -1,0 +1,15 @@
+mixin futureCards(future_tags, future_heading, date_published)
+    .vm-fut-cards.vm-thumbnail
+        a(href="javascript:void(0);")
+            .vm-cate-list
+                .vm-cate-list__item= future_tags
+            h5.vm-thumbnail__heading= future_heading
+            span.vm-fut-cards__date= date_published
+        a.vm-hero-link.fnt-sm.d-flex.align-items-center(href="javascript:void(0);")
+            | Register for webinar
+        
+        a(href="javascript:void(0);").vm-profil-wraper
+            .vm-profile
+                img(src="./assets/img/webinar/profile.jpg" alt="User profile")
+            .vm-profile
+                img(src="./assets/img/webinar/profile2.jpeg" alt="User profile")
