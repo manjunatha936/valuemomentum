@@ -9,23 +9,28 @@ section.section-padding4.pt-md-4
                             img(src="./assets/img/case-studies/filter-menu.svg" alt="Menu Icon")
                             span.dot-red
                     .filterizr-control
-                        ul.vm-filter__body.pt-3.filterizr-filter.multifilter
-                            li.filter-tabs.active(data-multifilter="all") ALL
-                            li.filter-tabs(data-multifilter="1") Cloud
-                            li.filter-tabs(data-multifilter="2") Banking
-                            li.filter-tabs(data-multifilter="3") Whitepaper
-                            li.filter-tabs(data-multifilter="4") API Integration
-                            li.filter-tabs(data-multifilter="2") Banking
-                            li.filter-tabs(data-multifilter="3") Whitepaper
-                            li.filter-tabs(data-multifilter="4") API Integration
-                            .filter-tabs
-                                a(href="").extra-content-link
+                        ul.vm-filter__body.filterizr-filter.multifilter
+                            li.filter-tabs.mt-3.active(data-multifilter="all") ALL
+                            li.filter-tabs.mt-3(data-multifilter="1") Cloud
+                            li.filter-tabs.mt-3(data-multifilter="2") Banking
+                            li.filter-tabs.mt-3(data-multifilter="3") Whitepaper
+                            li.filter-tabs.mt-3(data-multifilter="4") API Integration
+                            li.filter-tabs.mt-3(data-multifilter="2") Banking
+                            li.filter-tabs.mt-3(data-multifilter="3") Whitepaper
+                            li.filter-tabs.mt-3(data-multifilter="4") API Integration
+                            .filter-tabs.mt-3.extra-content-link
+                                a(href="")
                                     img(src="./assets/img/white-papers-listing/arrow.svg", alt="")
 
-        
+                        ul.row.extra-content-wrp.filterizr-filter.multifilter
+                            li.filter-tabs.mt-2(data-multifilter="1") Cloud
+                            li.filter-tabs.mt-2(data-multifilter="2") Banking
+                            li.filter-tabs.mt-2(data-multifilter="3") Whitepaper
+                            li.filter-tabs.mt-2(data-multifilter="4") API Integration
+                            li.filter-tabs.mt-2(data-multifilter="2") Banking
+                
         .row.pt-md-5.vm-show-cnt
-            .row.extra-content-wrp
-                include 03filter-cards.pug
+            
             .filtr-container
                 include 03filter-cards.pug
 

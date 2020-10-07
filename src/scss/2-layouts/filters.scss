@@ -26,7 +26,19 @@
 
 .extra-content-wrp {
   display: none;
+  transition: .5s ease all;
+  transform: translateY(30px);
+  opacity: 0;
   &.show{
+    opacity: 1;
+    transform: translateY(0);
     display: flex !important  ;
+    transition: .6s ease all;
+  }
+}
+
+.filtr-container {
+  .vm-thumbnail__body {
+    height: 224px;
   }
 }
