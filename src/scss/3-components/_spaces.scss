@@ -40,7 +40,10 @@
 }
 
 .pt8 {
-  padding-top: 8rem;
+  padding-top: 4rem;
+  @media (min-width: $md) {
+    padding-top: 6rem;
+  }
 }
 
 .mb3 {

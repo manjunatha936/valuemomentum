@@ -1,11 +1,22 @@
 .vm-filter {
+  @media (max-width: $tab) {
+    margin-bottom: 1.5rem;
+  }
+
   &__header {
     border-bottom: 1px solid #e6e6e6;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    @media (min-width: $md) {
+      padding-bottom: 1rem;
+    }
   }
   &__heading {
     font-size: 20px;
     line-height: 30px;
+    @media (max-width: $tab) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
   &__body {
     display: flex;
