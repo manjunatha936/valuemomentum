@@ -29,7 +29,7 @@ class ModalPopup {
           body.classList.add("overflow-hidden");
           body.before(overlayDiv);
           overlayDiv.classList.add("vm-blackedout");
-          node12.innerHTML = "Hide Snapshot";
+          // node12.innerHTML = "Hide Snapshot";
 
           // Hide snapshot
           if (trigger.classList.contains("vm-hide")) {

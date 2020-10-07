@@ -83,6 +83,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "bootstrap": "^4.5.0",
+    "filterizr": "^2.2.4",
     "gsap": "^3.5.1",
     "intl-tel-input": "^17.0.3",
     "jquery": "^3.5.1",

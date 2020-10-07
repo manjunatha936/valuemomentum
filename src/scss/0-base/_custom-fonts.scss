@@ -12,7 +12,8 @@
 @font-face {
   font-family: "muli-Bold";
   src: url("../assets/fonts/muli-bold/muli-Bold.eot");
-  src: url("../assets/fonts/muli-bold/muli-Bold.eot?#iefix") format("embedded-opentype"),
+  src: url("../assets/fonts/muli-bold/muli-Bold.eot?#iefix")
+      format("embedded-opentype"),
     url("../assets/fonts/muli-bold/muli-Bold.woff") format("woff"),
     url("../assets/fonts/muli-bold/muli-Bold.ttf") format("truetype"),
     url("../assets/fonts/muli-bold/muli-Bold.svg#muli-Bold") format("svg");
@@ -23,10 +24,12 @@
 @font-face {
   font-family: "muli-SemiBold";
   src: url("../assets/fonts/muli-semibold/muli-SemiBold.eot");
-  src: url("../assets/fonts/muli-semibold/muli-SemiBold.eot?#iefix") format("embedded-opentype"),
+  src: url("../assets/fonts/muli-semibold/muli-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
     url("../assets/fonts/muli-semibold/muli-SemiBold.woff") format("woff"),
     url("../assets/fonts/muli-semibold/muli-SemiBold.ttf") format("truetype"),
-    url("../assets/fonts/muli-semibold/muli-SemiBold.svg#muli-SemiBold") format("svg");
+    url("../assets/fonts/muli-semibold/muli-SemiBold.svg#muli-SemiBold")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -36,28 +39,30 @@
 @font-face {
   font-family: "adamina-regular";
   src: url("../assets/fonts/adamina/adamina-regular.eot");
-  src: url("../assets/fonts/adamina/adamina-regular.eot?#iefix") format("embedded-opentype"),
+  src: url("../assets/fonts/adamina/adamina-regular.eot?#iefix")
+      format("embedded-opentype"),
     url("../assets/fonts/adamina/adamina-regular.woff") format("woff"),
     url("../assets/fonts/adamina/adamina-regular.ttf") format("truetype"),
-    url("../assets/fonts/adamina/adamina-regular.svg#adamina-regular") format("svg");
+    url("../assets/fonts/adamina/adamina-regular.svg#adamina-regular")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
 
 // valuemomentum
 
 @font-face {
   font-family: "valuemomentum";
   src: url("../assets/fonts/valuemomentum/valuemomentum.eot");
-  src: url("../assets/fonts/valuemomentum/valuemomentum.eot?#iefix") format("embedded-opentype"),
+  src: url("../assets/fonts/valuemomentum/valuemomentum.eot?#iefix")
+      format("embedded-opentype"),
     url("../assets/fonts/valuemomentum/valuemomentum.woff") format("woff"),
     url("../assets/fonts/valuemomentum/valuemomentum.ttf") format("truetype"),
-    url("../assets/fonts/valuemomentum/valuemomentum.svg#valuemomentum") format("svg");
+    url("../assets/fonts/valuemomentum/valuemomentum.svg#valuemomentum")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
 
 [data-icon]:before {
   font-family: "valuemomentum" !important;
@@ -99,4 +104,11 @@
 
 .icon-link:before {
   content: "\64";
+}
+
+.icon-right-arrow-angle:before {
+  content: "\65";
+}
+.icon-arrow-angle-right:before {
+  content: "\66";
 }

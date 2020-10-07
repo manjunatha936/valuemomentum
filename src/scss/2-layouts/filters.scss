@@ -7,4 +7,31 @@
     font-size: 20px;
     line-height: 30px;
   }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.dot-red {
+  display: none;
+  width: 5px;
+  height: 5px;
+  background: red;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.extra-content-link {
+  img {
+    transform: rotate(90deg);
+  }
+}
+
+.extra-content-wrp {
+  display: none;
+  &.show {
+    display: flex !important  ;
+  }
 }
