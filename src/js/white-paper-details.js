@@ -1,6 +1,6 @@
 /*eslint-disable*/
 import Swiper from "swiper";
-// import $ from "jquery";
+import 'parsleyjs'
 
 class ModalPopup {
   constructor() {
@@ -59,6 +59,15 @@ class ModalPopup {
 
       // Adding Hide and show content
     }
+
+
+    // parsley  validation
+
+    $(".js-whitepaper-form").parsley()
+   
+  
+
+
   }
 }
 
