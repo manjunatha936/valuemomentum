@@ -1,77 +1,78 @@
 .vm-social-list {
-    display: flex;
-    padding-top: 1rem;
+  display: flex;
+  padding-top: 1rem;
 
-    &__item {
-        margin-right: 1rem;
+  &__item {
+    margin-right: 1.2rem;
+    @media (min-width: $md) {
+      margin-right: 1rem;
     }
+  }
 }
 
-
 .vm-social-link {
-    position: relative;
-    height: 2.25rem;
-    min-width: 2.25rem;
-    border-radius: 50%;
-    // background: #f9f9f9;
-    background: #f9f9f9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #4a4a4a;
-    @extend .fnt-md;
-    transition: all .25s ease;
+  position: relative;
+  height: 2.25rem;
+  min-width: 2.25rem;
+  border-radius: 50%;
+  // background: #f9f9f9;
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4a4a4a;
+  @extend .fnt-md;
+  transition: all 0.25s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2.5rem;
+    width: 0;
+    left: 0;
+    background: $text-secondary;
+    transition: all 0.25s ease;
+    border-radius: 20px;
+    transform: scaleX(0);
+    z-index: -1;
+  }
+
+  &:hover {
+    background: $text-secondary;
+    min-width: 120px;
+    border-radius: 23px;
+    transition: all 0.25s ease;
+    color: $w;
 
     &::before {
-        content: "";
-        position: absolute;
-        height: 2.5rem;
-        width: 0;
-        left: 0;
-        background: $text-secondary;
-        transition: all .25s ease;
-        border-radius: 20px;
-        transform: scaleX(0);
-        z-index: -1;
-
+      transition: all 0.25s ease;
+      transform: scaleX(1);
     }
 
-    &:hover {
-        background: $text-secondary;
-        min-width: 120px;
-        border-radius: 23px;
-        transition: all .25s ease;
-        color: $w;
-
-        &::before {
-            transition: all .25s ease;
-            transform: scaleX(1);
-        }
-
-        .vm-social-link__txt {
-            transition: all .25s ease;
-            display: block;
-        }
+    .vm-social-link__txt {
+      transition: all 0.25s ease;
+      display: block;
     }
+  }
 
-    &__txt {
-        transition: all .25s ease;
-        display: none;
-        color: $w;
-        position: relative;
-        padding-left: .5rem;
-        margin-left: .3rem;
-        text-transform: uppercase;
+  &__txt {
+    transition: all 0.25s ease;
+    display: none;
+    color: $w;
+    position: relative;
+    padding-left: 0.5rem;
+    margin-left: 0.3rem;
+    text-transform: uppercase;
 
-        &::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 50%;
-            height: 10px;
-            width: 1px;
-            background: rgba($color: $w, $alpha: .5);
-            transform: translateY(-50%);
-        }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      height: 10px;
+      width: 1px;
+      background: rgba($color: $w, $alpha: 0.5);
+      transform: translateY(-50%);
     }
+  }
 }

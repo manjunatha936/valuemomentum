@@ -28,6 +28,16 @@
   }
 }
 
+.section-padding10 {
+  padding: 3rem 0;
+  @media (min-width: $md) {
+    padding: 8rem 0;
+  }
+  @media (min-width: $lg) {
+    padding: 10rem 0;
+  }
+}
+
 .vm-pxy-3 {
   padding: {
     top: 1.5rem;
@@ -43,6 +53,9 @@
   padding-top: 4rem;
   @media (min-width: $md) {
     padding-top: 6rem;
+  }
+  @media (min-width: $lg) {
+    padding-top: 8rem;
   }
 }
 

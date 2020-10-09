@@ -1,0 +1,27 @@
+.vm-side-sticky
+    .vm-side-sticky__header
+        h5.mb-4 Featured speakers
+        include speakers-mix.pug
+        +futureSpeakers("./assets/img/webinar-details/speaker2.jpg", "sepaker", "Pratik Dasmohapatra", "Head of Digital & Cloud at value momentum")
+        +futureSpeakers("./assets/img/webinar-details/speaker.png", "sepaker", "Kevin Kelly", "Head of Digital & Cloud at value momentum")
+        +futureSpeakers("./assets/img/webinar-details/speaker2.jpg", "sepaker", "Elon Tusk", "Head of Digital & Cloud at value momentum")
+
+    .vm-side-sticky__body
+        h6.vm-side-sticky__heading Share case study
+        ul.vm-social-list
+            li.vm-social-list__item
+                a.vm-social-link(href="javascript:void(0);")
+                    i.icon-facebook
+                    span.vm-social-link__txt.fnt-xs Facebook
+            li.vm-social-list__item
+                a.vm-social-link(href="javascript:void(0);")
+                    i.icon-twitter
+                    span.vm-social-link__txt.fnt-xs Twitter
+            li.vm-social-list__item
+                a.vm-social-link(href="javascript:void(0);")
+                    .icon-linkedin
+                    span.vm-social-link__txt.fnt-xs Linkedin
+            li.vm-social-list__item
+                a.vm-social-link(href="javascript:void(0);")
+                    i.icon-link
+                    span.vm-social-link__txt.fnt-xs Twitter

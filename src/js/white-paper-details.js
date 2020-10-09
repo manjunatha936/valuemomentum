@@ -1,5 +1,4 @@
 /*eslint-disable*/
-import Swiper from "swiper";
 // import $ from "jquery";
 
 class ModalPopup {

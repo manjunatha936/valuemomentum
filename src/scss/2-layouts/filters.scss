@@ -20,9 +20,10 @@
   }
 
   &__body {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
+    @media (min-width: $md) {
+      padding-top: 1.5rem;
+    }
   }
 }
 
@@ -33,6 +34,7 @@
   background: red;
   position: absolute;
   border-radius: 50%;
+  top: 0.4rem;
 }
 
 .extra-content-link {

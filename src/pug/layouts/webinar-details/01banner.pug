@@ -1,0 +1,21 @@
+section.vm-banner-mb.js-modal-popup
+    .vm-banner.text-center
+        img.img-fluid(src="./assets/img/case-studies-details/casestudy-details.png" alt="Banner image")
+    
+    // Banner-content
+    .container
+        .row.px-md-3
+            .col-md-12.vm-bg-gray.vm-pxy-3.mt10
+                .row
+                    .col-md-7.col-lg-8
+                        .vm-categ-container
+                            span.vm-categ-patch API Integration
+                        h1.h1.mb-2.mb-md-3 API enablement: Tips, tools and best practices to get you there:
+                        p.vm-article-des Preparing for Digital Platform Implementation
+                        //- span.vm-article-published.fnt-md Released on 02 November 2018
+                        a.d-inline-block.d-md-none.vm-popup-trigger(data-popup-trigger="two")
+                            | Get whitepaper
+                            i.icon-arrow-angle-right.icon-right-arrow-angle--suc
+
+                    .col-md-5.col-lg-4
+                        include 1.1banner-form.pug

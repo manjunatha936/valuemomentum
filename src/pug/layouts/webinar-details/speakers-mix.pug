@@ -1,0 +1,21 @@
+mixin futureSpeakers(speker_img, speaker_alt, speaker_name, speaker_text)
+    .vm-media-speak
+        .vm-media-speak__left
+            img.img12x128(src=speker_img alt=speaker_alt)
+        .vm-media-speak__right
+            span.vm-media-speak__name= speaker_name
+            p.vm-media-speak__txt= speaker_text
+
+
+mixin webinarCards(src12, img_alt12, tags, tags2, heading)
+    .vm-thumbnail.vm-thumbnail--revrse.mb-md-4.pt-0
+        a(href="javascript:void(0);").vm-thumbnail__view
+            img.img354x250.img-fit(src=src12 alt= img_alt12)
+        .vm-thumbnail__body
+            .vm-cate-list.mb-0
+                span.vm-cate-list__item.mb-2= tags
+                span.vm-cate-list__item.mb-2= tags2
+            h5.vm-thumbnail__heading.mb-3= heading
+            a.vm-hero-link(href="javascript:void(0);")
+                | Watch now
+                i.icon-right-arrow-angle

@@ -1,67 +1,121 @@
 .vm-publish-date {
-    @extend .fnt-md;
-    letter-spacing: 0.93px;
-    display: block;
+  @extend .fnt-md;
+  letter-spacing: 0.93px;
+  display: block;
 }
 
 .vm-fut-cards {
-    background: #f9f9f9;
-    position: relative;
-    border-left: 5px solid $text-secondary;
-    padding: 1.2rem;
+  background: #f9f9f9;
+  position: relative;
+  border-left: 5px solid $text-secondary;
+  padding: 1.2rem;
 
-    &:hover {
-        background: $w;
-    }
+  &:hover {
+    background: $w;
+  }
 
-    &__date {
-        @extend .fnt-sm;
-        color: #6d7278;
-        display: inline-block;
-        margin-bottom: .3rem;
-    }
+  &__date {
+    @extend .fnt-sm;
+    color: #6d7278;
+    display: inline-block;
+    margin-bottom: 0.3rem;
+  }
 
-    .vm-hero-link {
-        color: $b !important;
-    }
+  .vm-hero-link {
+    color: $b !important;
+  }
 }
 
 .vm-profil-wraper {
-    position: absolute;
-    right: 0;
-    width: 100%;
-    bottom: .6rem;
-    text-align: right;
-    padding-right: 1.2rem;
-    display: flex;
-    justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  bottom: 0.6rem;
+  text-align: right;
+  padding-right: 1.2rem;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .vm-profile {
-    position: relative;
-    background: #fff;
-    padding: 2px;
-    border-radius: 50%;
-    margin-right: -.5rem;
+  position: relative;
+  background: #fff;
+  padding: 2px;
+  border-radius: 50%;
+  margin-right: -0.5rem;
 
-    &:first-child {
-        background: transparent;
-
-        img {
-            z-index: 1;
-            border: none;
-        }
-    }
-
-    &:last-child {
-        right: 0px;
-        margin-right: 0rem;
-    }
+  &:first-child {
+    background: transparent;
 
     img {
-        height: 40px;
-        width: 40px;
-        z-index: 2;
-        border-radius: 50%;
+      z-index: 1;
+      border: none;
     }
+  }
+
+  &:last-child {
+    right: 0px;
+    margin-right: 0rem;
+  }
+
+  img {
+    height: 40px;
+    width: 40px;
+    z-index: 2;
+    border-radius: 50%;
+  }
+}
+
+// Featured speakers
+
+.vm-media-speak {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+
+  &__right {
+    margin-left: 1rem;
+  }
+
+  &__name {
+    font-family: "muli-SemiBold";
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.63px;
+    display: inline-block;
+    margin-bottom: 0.4rem;
+
+    @media (min-width: $md) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  &__txt {
+    @extend .fnt-md;
+    letter-spacing: 0.5px;
+    color: $b;
+  }
+}
+
+.img12x128 {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  @media (min-width: $md) {
+    height: 90px;
+    width: 90px;
+  }
+  @media (min-width: $lg) {
+    height: 110px;
+    width: 110px;
+  }
+}
+
+// Webinar video
+
+.vm-video-banner {
+  .h1 {
+    letter-spacing: 0 !important;
+  }
 }

@@ -54,3 +54,22 @@
   right: 0;
   bottom: 0;
 }
+
+// Resources
+
+.img450x326 {
+  height: 250px;
+  object-fit: cover;
+
+  @media (max-width: $tab) {
+    max-width: 100%;
+  }
+
+  @media (min-width: $md) {
+    min-height: 100%;
+    width: 300px;
+  }
+  @media (min-width: $lg) {
+    width: 450px;
+  }
+}

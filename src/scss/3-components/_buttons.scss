@@ -55,6 +55,12 @@
       color: $danger;
     }
   }
+  &--sec {
+    color: $text-secondary !important;
+    display: flex;
+    align-items: center;
+    @extend .fnt-md;
+  }
 }
 
 .vm-circle {
@@ -63,4 +69,14 @@
   border-radius: 50%;
   background: $w;
   display: inline-block;
+
+  &--sec {
+    height: 25px;
+    width: 25px;
+    background: $text-secondary;
+    i {
+      right: -1px;
+      font-size: 8px !important;
+    }
+  }
 }

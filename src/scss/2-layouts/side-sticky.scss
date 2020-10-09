@@ -2,153 +2,174 @@
 // Side-sticky
 
 .vm-side-sticky {
-    @media (max-width: $tab) {
-        padding-top: 1.4rem;
+  @media (max-width: $tab) {
+    padding-top: 1.4rem;
+  }
+
+  @media (min-width: $md) {
+    margin-left: 1rem;
+    position: sticky;
+    top: 3.5rem;
+  }
+
+  @media (min-width: $lg) {
+    margin-left: 4rem;
+  }
+
+  &__header {
+    padding-bottom: 1rem;
+  }
+
+  &__heading {
+    font-size: 13px;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: $danger;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba($color: #a6a6ac, $alpha: 0.4);
+  }
+
+  &__content {
+    h6,
+    p {
+      font-size: 14px !important;
+      line-height: 24px !important;
     }
 
-    @media (min-width: $md) {
-        margin-left: 1rem;
-        position: sticky;
-        top: 3.5rem;
+    h6 {
+      padding-top: 0.8rem;
+      font-family: "muli-SemiBold";
     }
 
+    p {
+      margin-bottom: 0.8rem;
+    }
+
+    ul {
+      @media (max-width: $tab) {
+        margin-top: 1.5rem;
+      }
+
+      @media (min-width: $lg) {
+        max-width: 320px;
+      }
+
+      li {
+        position: relative;
+        padding-left: 1rem;
+        margin-bottom: 0.5rem;
+
+        &::before {
+          content: "";
+          top: 0.6rem;
+          left: 0;
+          position: absolute;
+          border-top: 4px solid transparent;
+          border-left: 7px solid $danger;
+          border-bottom: 4px solid transparent;
+        }
+      }
+    }
+  }
+
+  &__categ {
+    margin-bottom: 1.8rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
     @media (min-width: $lg) {
-        margin-left: 4rem;
+      margin-bottom: 2.5rem;
     }
+  }
 
-    &__heading {
-        font-size: 13px;
-        line-height: 23px;
-        text-transform: uppercase;
-        letter-spacing: 2.5px;
-        color: $danger;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid rgba($color: #a6a6ac, $alpha: 0.4);
+  // Sticky length content
+
+  &--lg {
+    @media (min-width: $md) {
+      overflow-y: auto;
+      height: calc(100vh - 12vh);
     }
-
-    &__content {
-
-        h6,
-        p {
-            font-size: 14px !important;
-            line-height: 24px !important;
-        }
-
-        h6 {
-            padding-top: .8rem;
-            font-family: "muli-SemiBold";
-        }
-
-        p {
-            margin-bottom: .8rem;
-        }
-
-        ul {
-            @media (max-width: $tab) {
-                margin-top: 1.5rem;
-            }
-
-            @media (min-width: $lg) {
-                max-width: 320px;
-            }
-
-            li {
-                position: relative;
-                padding-left: 1rem;
-                margin-bottom: .5rem;
-
-                &::before {
-                    content: "";
-                    top: 0.6rem;
-                    left: 0;
-                    position: absolute;
-                    border-top: 4px solid transparent;
-                    border-left: 7px solid $danger;
-                    border-bottom: 4px solid transparent;
-                }
-            }
-        }
-    }
+  }
 }
 
 .vm-hidden-data {
-    @media (min-width: $md) {
-        max-height: 450px;
-        overflow-y: auto;
-    }
+  @media (min-width: $md) {
+    max-height: 450px;
+    overflow-y: auto;
+  }
 }
 
 .vm-media {
-    display: flex;
-    margin-top: 1.4rem;
+  display: flex;
+  margin-top: 1.4rem;
 
-    &__right {
-        margin-left: 1rem;
-    }
+  &__right {
+    margin-left: 1rem;
+  }
 
-    &__date {
-        color: #a6a6ac;
-    }
+  &__date {
+    color: #a6a6ac;
+  }
 }
 
 .show-more-button {
-    display: none;
-    @extend .fnt-sm;
+  display: none;
+  @extend .fnt-sm;
 
-    @media (min-width: $md) {
-        letter-spacing: 0.44px;
-        text-decoration: underline !important;
-        color: #0067ff !important;
-        cursor: pointer;
-        display: inline-block;
-    }
-
+  @media (min-width: $md) {
+    letter-spacing: 0.44px;
+    text-decoration: underline !important;
+    color: #0067ff !important;
+    cursor: pointer;
+    display: inline-block;
+  }
 }
 
 .hideContent {
-    @media (min-width: $md) {
-        transition: all ease-in-out .3s;
-        display: none;
-    }
+  @media (min-width: $md) {
+    transition: all ease-in-out 0.3s;
+    display: none;
+  }
 }
 
 .hideAll {
-    @media (min-width: $md) {
-        transition: all ease-in-out .3s;
-        display: block;
-    }
+  @media (min-width: $md) {
+    transition: all ease-in-out 0.3s;
+    display: block;
+  }
 }
 
 // Mobile sticky bottom fixed
 
 .vm-sticky-btm {
-    @media (max-width: $tab) {
-        position: fixed;
-        bottom: 0;
-        z-index: 10000;
-        left: 0;
-        right: 0;
-        background: $text-secondary;
+  @media (max-width: $tab) {
+    position: fixed;
+    bottom: 0;
+    z-index: 10000;
+    left: 0;
+    right: 0;
+    background: $text-secondary;
 
-        &__content {
-            padding: .5rem;
-            text-align: center;
-        }
+    &__content {
+      padding: 0.5rem;
+      text-align: center;
     }
+  }
 }
 
 .vm-sticky-link {
-    font-size: 13px;
-    line-height: 24px;
+  font-size: 13px;
+  line-height: 24px;
+  color: $w;
+  text-transform: uppercase;
+  display: none;
+
+  &:focus {
     color: $w;
-    text-transform: uppercase;
-    display: none;
+  }
 
-    &:focus {
-        color: $w;
-    }
-
-    @media (max-width: $tab) {
-        display: block;
-    }
+  @media (max-width: $tab) {
+    display: block;
+  }
 }

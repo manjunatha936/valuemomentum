@@ -1,5 +1,5 @@
 /*eslint-disable*/
-import $ from "jquery";
+// import $ from "jquery";
 import Swiper from "swiper";
 
 class ResourceSlider {

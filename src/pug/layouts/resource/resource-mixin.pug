@@ -1,0 +1,57 @@
+mixin upComing(future_tags, future_heading, date_published)
+    .vm-fut-cards.vm-thumbnail
+        a(href="javascript:void(0);")
+            .vm-cate-list
+                .vm-cate-list__item= future_tags
+            h5.vm-thumbnail__heading= future_heading
+            span.vm-fut-cards__date= date_published
+        a.vm-hero-link.fnt-sm.d-flex.align-items-center(href="javascript:void(0);")
+            | Register for webinar
+            i.icon-arrow-angle-right
+        
+        a(href="javascript:void(0);").vm-profil-wraper
+            .vm-profile
+                img(src="./assets/img/webinar/profile.jpg" alt="User profile")
+            .vm-profile
+                img(src="./assets/img/webinar/profile2.jpeg" alt="User profile")
+
+
+// Hero-sub heading links
+
+mixin linkcateg(hero_heading)
+    a(href="javascript:void(0);").hero-heading.hero-heading--link= hero_heading
+    a.vm-hero-link.vm-hero-link--sec(href="javascript:void(0);")
+        | See All
+        span.vm-circle.vm-circle--sec.flex-center.ml-3
+           i.icon-arrow-angle-right.icon-arrow-angle-right--wht.ml-0
+
+
+// Published cards
+mixin whitepaperCards(src12, img_alt12, tags, tags2, heading, publistStatus, publishDate)
+    .vm-thumbnail.vm-thumbnail--revrse.mb-3.mb-md-4.pt-0
+        
+        a(href="javascript:void(0);").vm-thumbnail__view
+            img.img354x250.img-fit(src=src12 alt= img_alt12)
+        .vm-thumbnail__body
+            .vm-cate-list
+                span.vm-cate-list__item.mb-2= tags
+                span.vm-cate-list__item.mb-2= tags2
+            h5.vm-thumbnail__heading.mb-3= heading
+            .vm-ar-publish-info.fnt-xs
+                span= publistStatus
+                span= publishDate
+
+
+mixin webinarCards(src12, img_alt12, tags, tags2, heading, publistStatus, publishDate)
+    .vm-thumbnail.vm-thumbnail--revrse.mb-3.mb-md-4.pt-0
+        
+        a(href="javascript:void(0);").vm-thumbnail__view
+            img.img354x250.img-fit(src=src12 alt= img_alt12)
+        .vm-thumbnail__body
+            .vm-cate-list
+                span.vm-cate-list__item.mb-2= tags
+                span.vm-cate-list__item.mb-2= tags2
+            h5.vm-thumbnail__heading.mb-3= heading
+            a.vm-hero-link(href="javascript:void(0);")
+                | Watch now
+                i.icon-right-arrow-angle

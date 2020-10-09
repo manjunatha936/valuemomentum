@@ -13,28 +13,32 @@ section.section-padding6.pt-0
                             span.dot-red
                     .filterizr-control
                         ul.vm-filter__body.filterizr-filter.multifilter
-                            li.filter-tabs.mt-3.active(data-multifilter="all") ALL
-                            li.filter-tabs.mt-3(data-multifilter="1") Cloud
-                            li.filter-tabs.mt-3(data-multifilter="2") Banking
-                            li.filter-tabs.mt-3(data-multifilter="3") Whitepaper
-                            li.filter-tabs.mt-3(data-multifilter="4") API Integration
-                            li.filter-tabs.mt-3(data-multifilter="2") Banking
-                            li.filter-tabs.mt-3(data-multifilter="3") Whitepaper
-                            li.filter-tabs.mt-3(data-multifilter="4") API Integration
-                            .filter-tabs.mt-3.extra-content-link
-                                a(href="")
-                                    img(src="./assets/img/white-papers-listing/arrow.svg", alt="")
+                            li.filter-tabs.active(data-multifilter="all") ALL
+                            li.filter-tabs(data-multifilter="1") Cloud
+                            li.filter-tabs(data-multifilter="2") Banking
+                            li.filter-tabs(data-multifilter="3") Whitepaper
+                            li.filter-tabs(data-multifilter="4") API Integration
+                            li.filter-tabs(data-multifilter="4") Technology
+                            li.filter-tabs(data-multifilter="2") Banking
+                            li.filter-tabs(data-multifilter="3") Whitepaper
+                            li.filter-tabs(data-multifilter="4") API Integration
+                            //- .filter-tabs.mt-3.extra-content-link
+                            //-     a(href="")
+                            //-         img(src="./assets/img/white-papers-listing/arrow.svg", alt="")
 
-                        ul.row.extra-content-wrp.filterizr-filter.multifilter
-                            li.filter-tabs.mt-2(data-multifilter="1") Cloud
-                            li.filter-tabs.mt-2(data-multifilter="2") Banking
-                            li.filter-tabs.mt-2(data-multifilter="3") Whitepaper
-                            li.filter-tabs.mt-2(data-multifilter="4") API Integration
-                            li.filter-tabs.mt-2(data-multifilter="2") Banking
+                        //- ul.row.extra-content-wrp.filterizr-filter.multifilter
+                        //-     li.filter-tabs.mt-2(data-multifilter="1") Cloud
+                        //-     li.filter-tabs.mt-2(data-multifilter="2") Banking
+                        //-     li.filter-tabs.mt-2(data-multifilter="3") Whitepaper
+                        //-     li.filter-tabs.mt-2(data-multifilter="4") API Integration
+                        //-     li.filter-tabs.mt-2(data-multifilter="2") Banking
                 
         .row.pt-md-5.vm-show-cnt
             
             .filtr-container
                 include 03filter-cards.pug
+                
+            .col-md-12.text-center.mt-3.mt-md-4
+                button.vm-btn.vm-btn--sm#loadMore Load more
 
         
