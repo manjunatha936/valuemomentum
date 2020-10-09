@@ -1,0 +1,21 @@
+doctype html
+html(lang="en" dir="ltr")
+  include ./base/head.pug
+  +head('Valuemomentum - blogs-listing')
+
+  //- //Orientation
+  //- include ./components/orientation-modal.pug
+  
+  body
+    include ./components/header.pug
+    //- +header("bg-blue-header")
+    
+    main
+      include ./layouts/blogs-listing/main.pug
+
+      // More resources  
+      include ./components/more-resources.pug
+
+    include ./components/footer.pug
+
+    

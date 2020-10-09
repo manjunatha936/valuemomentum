@@ -4,6 +4,11 @@
     display: block;
 }
 
+.wm-16 {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.93px;
+}
 .vm-fut-cards {
     background: #f9f9f9;
     position: relative;
@@ -64,4 +69,14 @@
         z-index: 2;
         border-radius: 50%;
     }
+}
+
+.vm-hero-banner--blog {
+    
+    background-position-x: right !important;
+    // background-size: 71% 100% !important;
+    background-size: 100% 100% !important;
+    // background-image: url("../assets/img/blog-banner.png");
+    background-image: url('/assets/img/blog-banner.png') !important;
+    background-repeat: no-repeat !important;
 }
