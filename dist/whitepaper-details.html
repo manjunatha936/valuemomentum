@@ -92,22 +92,22 @@
                 </div>
                 <div class="col-md-5 col-lg-4">
                   <div class="vm-popup-modal shadow" data-popup-modal="one"><span class="vm-popup-modal__close">X</span>
-                    <form class="vm-form-panel mt10">
+                    <form class="vm-form-panel mt10 js-whitepaper-form">
                       <div class="form-group">
                         <label class="vm-label" for="InputName">First Name</label>
-                        <input class="vm-input form-control" id="InputName" type="text" placeholder="First Name">
+                        <input class="vm-input form-control" id="InputName" type="text" placeholder="First Name" data-parsley-required>
                       </div>
                       <div class="form-group">
                         <label class="vm-label" for="InputCompany">Company</label>
-                        <input class="vm-input form-control" id="InputCompany" type="text" placeholder="Company name">
+                        <input class="vm-input form-control" id="InputCompany" type="text" placeholder="Company name" data-parsley-required>
                       </div>
                       <div class="form-group">
                         <label class="vm-label" for="InputJobtitle">Job Title</label>
-                        <input class="vm-input form-control" type="text" id="InputJobtitle" placeholder="Job title">
+                        <input class="vm-input form-control" type="text" id="InputJobtitle" placeholder="Job title" data-parsley-required>
                       </div>
                       <div class="form-group">
                         <label class="vm-label" for="InputAddress">E-main Address</label>
-                        <input class="vm-input form-control" type="text" placeholder="E-main Address" id="InputAddress">
+                        <input class="vm-input form-control" type="text" placeholder="E-main Address" id="InputAddress" data-parsley-required data-parsley-type="email">
                       </div>
                       <button class="vm-btn vm-btn--filed vm-btn--sm mt-3" type="submit">Download the Whitepaper</button>
                     </form>

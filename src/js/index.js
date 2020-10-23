@@ -24,13 +24,13 @@ const footeranimate = new FooterAnim();
 
 if (process.env.NODE_ENV === "development") {
   // require("../pug/home.pug");
-  require("../pug/index.pug");
-  require("../pug/whitepaper-details.pug");
-  require("../pug/case-studies-details.pug");
-  require("../pug/case-studies.pug");
-  require("../pug/webinar.pug");
-  require("../pug/webinar-details.pug");
-  require("../pug/resource.pug");
+  // require("../pug/index.pug");
+  // require("../pug/whitepaper-details.pug");
+  // require("../pug/case-studies-details.pug");
+  // require("../pug/case-studies.pug");
+  // require("../pug/webinar.pug");
+  // require("../pug/webinar-details.pug");
+  // require("../pug/resource.pug");
 }
 
 // Eslint-disable-line no-console

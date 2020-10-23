@@ -44,12 +44,18 @@ class Filters {
       }
     });
 
+    //Icon click
+    $(".filterizr-control").slideUp()
+    $(".icon-wrp").click(function(){
+        $(".filterizr-control").slideToggle()
+    })
+
     //extra content
 
-    // $(".extra-content-link").click(function (e) {
-    //   e.preventDefault();
-    //   $(".extra-content-wrp").toggleClass("show");
-    // });
+    $(".extra-content-link").click(function (e) {
+      e.preventDefault();
+      $(".extra-content-wrp").toggleClass("show");
+    });
   }
 }
 
