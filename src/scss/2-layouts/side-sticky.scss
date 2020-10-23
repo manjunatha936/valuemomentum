@@ -1,6 +1,14 @@
 // Sticky
 // Side-sticky
 
+.link-wrp-anchor {
+  display: flex;
+
+  li {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+}
 .vm-side-sticky {
   @media (max-width: $tab) {
     padding-top: 1.4rem;
@@ -87,7 +95,7 @@
 
   &--lg {
     @media (min-width: $md) {
-      overflow-y: auto;
+      // overflow-y: auto;
       height: calc(100vh - 12vh);
     }
   }

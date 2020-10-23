@@ -91,6 +91,7 @@
     "jquery-validation": "^1.19.2",
     "lozad": "^1.15.0",
     "magnific-popup": "^1.1.0",
+    "overlayscrollbars": "^1.13.0",
     "parsleyjs": "^2.9.2",
     "pinch-zoom-js": "2.3.4",
     "sass-mq": "5.0.1",

@@ -1,7 +1,7 @@
 // Eslint-disable
 import "core-js/stable";
 import "regenerator-runtime/runtime";
-// import $ from "jquery";
+import $ from "jquery";
 // import jQuery from "jquery";
 
 // import "./smoth-scroll.js";
@@ -12,6 +12,12 @@ import "../scss/main.scss";
 import "bootstrap/js/dist/dropdown";
 import "bootstrap/js/dist/tab";
 import "bootstrap/js/dist/collapse";
+
+import OverlayScrollbars from 'overlayscrollbars';
+
+var instance = OverlayScrollbars($(".scroll-wrp"), {
+ 
+});
 // import "bootstrap/js/dist/modal";
 
 // import "semantic-ui-css";
@@ -46,10 +52,12 @@ const resourceSlider = new ResourceSlider();
 import ModalPopup from "./white-paper-details.js";
 const modalPopup = new ModalPopup();
 
-// Case-stusy details
+// Case-stusy details   
 import CasestudyDetails from "./casestudy-details.js";
 const casestudyDetails = new CasestudyDetails();
 
+import BlogDetails from "./blog-details.js";
+const blogDetails = new BlogDetails();
 // Load More Cards when you click load more button
 
 // var parent = document.querySelector(".vm-show-cnt"),

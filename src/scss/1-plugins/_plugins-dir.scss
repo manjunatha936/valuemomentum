@@ -1,4 +1,5 @@
 @import "bootstrap/bootstrap";
+
 // @import "~aos/src/sass/aos.scss";
 @import "~swiper/css/swiper.css";
 @import "~semantic-ui-css/components/dropdown.min.css";
@@ -15,5 +16,7 @@
 // @import "semantic-sticky";
 @import "common";
 @import "global";
+
+@import "~overlayscrollbars/css/OverlayScrollbars.min.css"
 // @import "semantic-override";
 // @import "swiper-override";

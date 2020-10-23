@@ -7,6 +7,9 @@ class CasestudyDetails {
     if (document.querySelector(".js-casestudy-details")) {
       this.init();
     }
+    if (document.querySelector(".scroll-links")) {
+      this.initScroll();
+    }
   }
 
   init() {
@@ -33,6 +36,17 @@ class CasestudyDetails {
     });
 
     // Hide and View snap chart
+  }
+
+  initScroll() {
+    $(".link-item a").click(function(e) {
+
+      let target = $(this).attr("data-target")
+      e.preventDefault()
+      $('html, body').animate({
+          scrollTop: $("#"+target).offset().top - 80
+      }, 1000);
+  });
   }
 }
 
