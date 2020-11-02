@@ -1,0 +1,151 @@
+
+.specific-tags {
+    padding: 7rem 0 3rem;
+    @media screen and (min-width:768px){
+        padding: 12rem 0 7rem;
+
+    }
+    &__head {
+        color: #000000;
+        font-family: "muli-Bold";
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .specific-tag-thumb {
+        padding: 16px 26px !important;
+    
+        .profiles-up {
+            height: 44px;
+            position: relative;
+            margin-top: 32px;
+        }
+    
+        .vm-profil-wraper {
+            bottom: 0 !important;
+           
+        }
+        .vm-thumbnail__heading {
+            font-weight: 700;
+        }
+    
+        
+    }
+    
+    .side-sticky-head {
+        color: #000000;
+        font-family: "muli-Bold";
+        font-size: 20px !important;
+        font-weight: 700;
+        margin-bottom: 25px;
+        // padding-bottom: 20px;
+    }
+
+    .search-result-wrp {
+        padding-top: 25px;
+    }
+
+    .search-result {
+        // padding-top: 50px;
+        margin-top: 24px;
+
+
+
+        &__item {
+            display: flex;
+        }
+
+        &__img {
+            img {
+                width: 166px;
+                height: 164px;
+
+            }
+        }
+
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding: 16px 16px ;
+            background-color: #f9f9f9;
+            
+            @media screen and (min-width:768px){
+                padding: 16px 32px ;
+                
+            }
+        }
+
+        &__date {
+            padding-left: 20px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: '';
+                width: 4px;
+                height: 4px;
+                background-color: #828282;
+                border-radius: 50%;
+                left: 10px;
+                top: 8px;
+            }
+        }
+
+        &__head {
+            flex: 1;
+            color: #000000;
+            font-family: "muli-Bold";
+            font-size: 18px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 20px;
+            @media screen and (min-width:768px){
+                font-size: 20px;
+                line-height: 32px;
+ 
+                
+            }
+        }
+
+        &__des {
+            color: $card-des;
+            font-family: "muli";
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 0.23px;
+            line-height: 24px;
+            padding: 10px 0;
+        }
+
+        &__link {
+            color: #000000;
+            font-family: "muli-SemiBold";
+            font-size: 14px;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 14px;
+
+            .icon-right-arrow-angle {
+                color: #000000 !important;
+            }
+        }
+    }
+    .blck-12 {
+        color: #000000;
+        font-family: "muli";
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .gry-12 {
+        font-family: "muli-SemiBold";
+        font-size: 12px;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: 0.7px;
+        color: #a19ae5;
+    }
+}

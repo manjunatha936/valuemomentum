@@ -1,0 +1,37 @@
+
+mixin futureSpeakers(speker_img, speaker_alt, speaker_name, speaker_text)
+    .vm-media-speak
+        .vm-media-speak__left
+            img.img12x128(src=speker_img alt=speaker_alt)
+        .vm-media-speak__right
+            span.vm-media-speak__name= speaker_name
+            p.vm-media-speak__txt= speaker_text
+
+
+mixin mediaArticle(src, alt, heading, date)
+    a(href="javascript:void(0);").vm-media
+        .vm-media__left
+            img(src=src alt=alt)
+        .vm-media__right
+            h6.fnt-md=heading
+            span.fnt-xs.vm-media__date=date
+
+
+mixin upComing(future_tags, future_heading, date_published)
+    .vm-fut-cards.vm-thumbnail.specific-tag-thumb
+        a(href="javascript:void(0);")
+            //- .vm-cate-list
+            //-     .vm-cate-list__item= future_tags
+            h5.vm-thumbnail__heading= future_heading
+            span.vm-fut-cards__date= date_published
+        a.vm-hero-link.fnt-sm.d-flex.align-items-center(href="javascript:void(0);")
+            | Register for webinar
+            i.icon-arrow-angle-right
+        .profiles-up
+            a(href="javascript:void(0);").vm-profil-wraper
+                .vm-profile
+                    img(src="./assets/img/webinar/profile.jpg" alt="User profile")
+                .vm-profile
+                    img(src="./assets/img/webinar/profile2.jpeg" alt="User profile")
+                .vm-profile
+                    img(src="./assets/img/webinar/profile2.jpeg" alt="User profile")

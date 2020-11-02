@@ -14,7 +14,7 @@ class BlogDetails {
 }
 
 init() {
-    alert(1)
+  
 
     
     //   let scrollbar = OverlayScrollbars($(".sc-container"));
